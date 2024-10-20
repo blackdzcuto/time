@@ -4,7 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Box clock using HTML , CSS , JS</title>
+  <title>Box clock BY ShadowVNs</title>
+  <script id="ABCD">
+    setInterval(function() {
+        var before = new Date().getTime();
+        debugger;
+        var after = new Date().getTime();
+        if (after - before > 200) {
+            document.querySelector("html").innerHTML = "";
+            window.location.reload(true);
+        }
+    }, 100);
+    </script>
   <style>
     body[data-theme="dark"] {
       background-color: #333;
